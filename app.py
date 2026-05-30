@@ -140,7 +140,7 @@ with aba1:
         .reset_index()
     )
 
-    fig, ax = plt.subplots(figsize=(10,5))
+    fig, ax = plt.subplots(figsize=(6,3))
 
     sns.lineplot(
         data=temp_ano,
@@ -157,7 +157,7 @@ with aba1:
 
     st.subheader("Distribuição por Região")
 
-    fig, ax = plt.subplots(figsize=(10,5))
+    fig, ax = plt.subplots(figsize=(6,3))
 
     sns.boxplot(
         data=df_filtrado,
@@ -183,7 +183,7 @@ with aba2:
         .reset_index()
     )
 
-    fig, ax = plt.subplots(figsize=(10,5))
+    fig, ax = plt.subplots(figsize=(6,3))
 
     sns.barplot(
         data=chuva_regiao,
@@ -203,7 +203,7 @@ with aba2:
         .reset_index()
     )
 
-    fig, ax = plt.subplots(figsize=(10,5))
+    fig, ax = plt.subplots(figsize=(6,3))
 
     sns.lineplot(
         data=chuva_ano,
@@ -230,7 +230,7 @@ with aba3:
         .reset_index()
     )
 
-    fig, ax = plt.subplots(figsize=(10,5))
+    fig, ax = plt.subplots(figsize=(6,3))
 
     sns.barplot(
         data=eventos_regiao,
@@ -249,7 +249,7 @@ with aba3:
         .corr()
     )
 
-    fig, ax = plt.subplots(figsize=(10,6))
+    fig, ax = plt.subplots(figsize=(6,3))
 
     sns.heatmap(
         corr,
