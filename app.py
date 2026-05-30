@@ -20,7 +20,7 @@ st.set_page_config(
 
 @st.cache_data
 def carregar_dados():
-    df = pd.read_csv("simulacao_clima_brasil.csv")
+    df = pd.read_csv("dados/simulacao_clima_brasil.csv")
 
     df["data"] = pd.to_datetime(df["data"])
 
